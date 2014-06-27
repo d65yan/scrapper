@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" > 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ABOUTPLACE.co. Relocate Smarter</title>
+  <script type="text/javascript" src="js/jquery_min.js"></script>
+	<script type="text/javascript" src="js/OpenLayers.js"></script>
+	
+	<script type="text/javascript" src="js/map.js"></script>
+
+
+  <script>
+	var map=null;
+	$(document).ready(function(){
+		map=new Map($('#main_map')[0]);
+                map.drawMap();
+	})
+ 
+
+        var Android=null;
+  </script>
+  
+  <style>
+      html, body, #main_map, #map_table{
+          width:100%;
+          height:100%
+      }
+      
+      #box_toggler{
+          width:100%;
+          height:100%;
+      }
+  </style>
+  
+
+  
+</head>
+<body   > 
+    <div></div>
+
+            <div id="main_map"></div>
+
+   </body>
+</html>
